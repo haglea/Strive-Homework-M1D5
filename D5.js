@@ -50,6 +50,29 @@ Write a function "crazyDiff" that computes the absolute difference between a giv
 It should return triple their absolute difference if the given number is greater than 19.
 */
 
+console.log("\n--------------EXERCISE 3--------------")
+
+let crazyDiff = function (givenNumber) {
+
+    let absoluteDifference = Math.abs(givenNumber - 19)
+
+    if (givenNumber > 19) {
+
+        absoluteDifferenceTriple = absoluteDifference * 3
+
+        console.log(absoluteDifferenceTriple)
+
+    } else {
+
+        console.log(absoluteDifference)
+
+    }
+
+}
+
+crazyDiff(2)
+
+
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
