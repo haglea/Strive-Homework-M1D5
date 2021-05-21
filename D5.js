@@ -77,7 +77,32 @@ crazyDiff(2)
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 4--------------")
+
+let boundary = function (IntegerN) {
+
+    if (IntegerN >= 20 && IntegerN <= 100) {
+
+        console.log(true)
+
+    } else if (IntegerN === 400) {
+    
+        console.log(true)
+
+    } else {
+
+        console.log(false)
+
+    }
+
+}
+
+boundary(19)
+boundary(20)
+boundary(99)
+boundary(100)
+boundary(399)
+boundary(400)
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
