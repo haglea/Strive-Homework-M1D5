@@ -134,7 +134,34 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 6--------------")
+
+let check3and7 = function (positiveNumber) {
+
+    if (positiveNumber % 3 === 0 && positiveNumber % 7 === 0) {
+
+        console.log(positiveNumber, "is a multiple of 3 and 7")
+
+    } else if (positiveNumber % 3 === 0) {
+
+        console.log(positiveNumber, "is a multiple of 3")
+    }
+    
+        else if (positiveNumber % 7 === 0) {
+
+        console.log(positiveNumber, "is a multiple of 7")
+
+    } else {
+
+        console.log(positiveNumber, "is neither multiple of 3 nor 7")
+
+    }
+
+}
+
+check3and7(8)
+check3and7(14)
+check3and7(21)
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
