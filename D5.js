@@ -158,19 +158,45 @@ reverseString("Strive")
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
+console.log("\n--------------EXERCISE 8--------------")
 
+const upperFirst = function (stringUpper) {
+    let splitedUpperString = stringUpper.split(" ")
+    //console.log(splitedUpperString)
+    for (i = 0; i < splitedUpperString.length; i++) {
+        let word = splitedUpperString[i]
+        let firstUpperLetterWord = word[0].toUpperCase() + word.substring(1, word.length)
+        console.log(firstUpperLetterWord)
+    } 
+}
+
+upperFirst("upper First letter")
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
+console.log("\n--------------EXERCISE 9--------------")
 
-/* WRITE YOUR CODE HERE */
+const cutString = function (cutString1) {
+    console.log(cutString1.slice(1, cutString1.length - 1))
+    return cutString1.slice(1, cutString1.length - 1)
+}
+cutString("Striveschool")
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
+console.log("\n--------------EXERCISE 10--------------")
 
-/* WRITE YOUR CODE HERE */
+const giveMeRandom = function (randomNumberN) {
+    let randomNumber = []
+    for (i = 0; i < randomNumberN; i++) {
+        randomNumber.push(Math.floor(Math.random() * 11)) // random from 0 to 10
+    }
+    console.log(randomNumber)
+    return randomNumber
+}
+giveMeRandom(2)
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
