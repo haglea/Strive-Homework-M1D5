@@ -13,11 +13,9 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculates the a
 console.log("\n--------------EXERCISE 1--------------")
 
 let area = function (l1, l2) {
-
     let areaOfRectangle = l1 * l2
-
     console.log(areaOfRectangle)
-
+    return areaOfRectangle
 }
 area(3, 2)
 
@@ -28,22 +26,18 @@ Write a function "crazySum" which receives two integers. It should return the su
 console.log("\n--------------EXERCISE 2--------------")
 
 let crazySum = function (Integer1, Integer2) {
-    
-    let sumOfIntegers = Integer1 + Integer2
-    let sumOfIntegers3 = sumOfIntegers * 3 
 
     if (Integer1 === Integer2) {
-
-        console.log(sumOfIntegers3)
+        console.log((Integer1 + Integer2) * 3)
+        return (Integer1 + Integer2) * 3
 
     } else {
-        
-        console.log(sumOfIntegers)
-
+        console.log(Integer1 + Integer2)
+        return Integer1 + Integer2
     }
 }
 
-crazySum (3, 3)
+crazySum (3, 4)
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
@@ -55,19 +49,14 @@ console.log("\n--------------EXERCISE 3--------------")
 let crazyDiff = function (givenNumber) {
 
     let absoluteDifference = Math.abs(givenNumber - 19)
-
+    
     if (givenNumber > 19) {
-
-        absoluteDifferenceTriple = absoluteDifference * 3
-
-        console.log(absoluteDifferenceTriple)
-
+        console.log(absoluteDifference * 3)
+        return absoluteDifference * 3
     } else {
-
         console.log(absoluteDifference)
-
+        return absoluteDifference
     }
-
 }
 
 crazyDiff(2)
@@ -81,18 +70,12 @@ console.log("\n--------------EXERCISE 4--------------")
 
 let boundary = function (IntegerN) {
 
-    if (IntegerN >= 20 && IntegerN <= 100) {
-
+    if (IntegerN >= 20 && IntegerN <= 100 || IntegerN === 400) {
         console.log(true)
-
-    } else if (IntegerN === 400) {
-    
-        console.log(true)
-
+        return true
     } else {
-
         console.log(false)
-
+        return true
     }
 
 }
@@ -113,16 +96,12 @@ console.log("\n--------------EXERCISE 5--------------")
 
 let strivify = function (aString) {
 
-    let addWordStrive = "Strive" + aString
-
     if (aString.startsWith("Strive")) {
-
         console.log(aString)
-
+        return aString
     } else {
-
-    console.log(addWordStrive)
-
+        console.log("Strive" + aString)
+        return "Strive" + aString
     }
 }
 
@@ -139,24 +118,14 @@ console.log("\n--------------EXERCISE 6--------------")
 let check3and7 = function (positiveNumber) {
 
     if (positiveNumber % 3 === 0 && positiveNumber % 7 === 0) {
-
         console.log(positiveNumber, "is a multiple of 3 and 7")
-
     } else if (positiveNumber % 3 === 0) {
-
         console.log(positiveNumber, "is a multiple of 3")
-    }
-    
-        else if (positiveNumber % 7 === 0) {
-
+    } else if (positiveNumber % 7 === 0) {
         console.log(positiveNumber, "is a multiple of 7")
-
     } else {
-
         console.log(positiveNumber, "is neither multiple of 3 nor 7")
-
     }
-
 }
 
 check3and7(8)
@@ -177,9 +146,9 @@ let reverseString = function (stringToReverse) {
    // console.log(reversedString)
     let joinedString = reversedString.join("")
     console.log(joinedString)
-
+    return joinedString
    // this would be in one step: let reversedString = stringToReverse.split("").reverse().join("")
-    // in one step: console.log(reversedString)
+
 }
 
 reverseString("Lea")
@@ -189,7 +158,7 @@ reverseString("Strive")
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR CODE HERE */
+
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
