@@ -51,7 +51,15 @@ In your eCommerce you have an array of objects called shoppingCart. In this arra
 Create a function "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 13--------------")
+let shoppingCart = [ {price: 2, quantity: 3}, {price: 2, quantity: 2}]
+//console.log(shoppingCart)
+const addToShoppingCart = function (item3) {
+    shoppingCart.push(item3)
+    console.log(shoppingCart)
+    return shoppingCart
+}
+addToShoppingCart({price: 3, quantity: 3})
 
 /* EXERCISE 14
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
