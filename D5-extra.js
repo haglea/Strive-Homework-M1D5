@@ -33,8 +33,18 @@ checkArray()
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "shippingCartTotal" which calculates the total due to the shop.
 */
+console.log("\n--------------EXERCISE 12--------------")
 
-/* WRITE YOUR CODE HERE */
+const shippingCartTotal = function (shoppingCart) {
+    let totalDue = 0
+    for (i = 0; i < shoppingCart.length; i++) {
+        let item = shoppingCart[i]
+        totalDue += item.price * item.quantity
+    }
+    console.log(totalDue)
+    return totalDue
+}
+shippingCartTotal([ {price: 6, quantity: 2}, {price: 2, quantity: 1}])
 
 /* EXERCISE 13
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
