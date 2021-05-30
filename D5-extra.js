@@ -184,7 +184,15 @@ checkIfEmailSpam("asdfjSPAMkl")
 Write a function that receives a date d as parameter and calculates the number of days passes since the d.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 20--------------")
+
+const checkHowManyDays = function (d) {
+    let currentDate = new Date()
+    console.log(Math.ceil((currentDate -d + 1) / 86400000))
+    return Math.ceil((currentDate - d + 1) / 86400000) //rounded to nearest integer
+}
+checkHowManyDays(new Date(2021, 0, 1))
+
 
 /* EXERCISE 21
 Write a function "matrixGenerator" that receives x and y as parameter. The result should be a matrix of x times y with, as value, the index of the position.
