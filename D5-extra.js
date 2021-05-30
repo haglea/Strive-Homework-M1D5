@@ -86,7 +86,14 @@ In your eCommerce you have an array of objects called shoppingCart. In this arra
 Create a function "latestShoppingCart" which receives the shoppingCart array and returns the last item.
 */
 
+console.log("\n--------------EXERCISE 15--------------")
+//console.log(shoppingCart)
 
+const latestShoppingCart = function () {
+    console.log("Last item is:", shoppingCart[shoppingCart.length - 1])
+    return shoppingCart[shoppingCart.length - 1]
+}
+latestShoppingCart()
 
 /* EXERCISE 16
 Create a function "loopUntil" which receives an integer x between 0 and 9.
