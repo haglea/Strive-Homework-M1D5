@@ -141,7 +141,24 @@ average([1, 2, 6, "cat", {number: 1, name: "product A"}])
 Write a function "longest" to find the longest string from an given array of strings.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 18--------------")
+
+const longest = function (arrayWithLongestString) {
+
+    let longestStringLength = 0
+    let longestString = 0
+
+    for (i = 0; i < arrayWithLongestString.length; i++) {
+        //let stringLength = arrayWithLongestString[i].length
+        if (arrayWithLongestString[i].length > longestStringLength) {
+            longestStringLength = arrayWithLongestString[i].length
+            longestString = arrayWithLongestString[i]
+        } else {}
+    }
+    console.log("The longest string in the array is:", longestString)
+    return longestString
+}
+longest(["string", "stringstring", "string string"])
 
 /* EXERCISE 19
 Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
