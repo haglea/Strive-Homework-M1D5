@@ -59,21 +59,34 @@ const addToShoppingCart = function (item3) {
     console.log(shoppingCart)
     return shoppingCart
 }
-addToShoppingCart({price: 3, quantity: 3})
+addToShoppingCart({price: 5, quantity: 3})
 
 /* EXERCISE 14
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in the array.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 14--------------")
+//console.log(shoppingCart)
+
+const maxShoppingCart = function () {
+    let shoppingPrices = []
+    for (i = 0; i < shoppingCart.length; i++) {
+        shoppingPrices.push(shoppingCart[i].price)
+    }
+    shoppingPrices.sort(function(a, b){return a-b})
+    console.log("The item with highest price is:", shoppingCart[shoppingCart.length-1])
+    return shoppingCart[shoppingCart.length-1]
+}
+maxShoppingCart()
+
 
 /* EXERCISE 15
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "latestShoppingCart" which receives the shoppingCart array and returns the last item.
 */
 
-/* WRITE YOUR CODE HERE */
+
 
 /* EXERCISE 16
 Create a function "loopUntil" which receives an integer x between 0 and 9.
