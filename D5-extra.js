@@ -116,10 +116,26 @@ const loopUntil = function (x) {
 loopUntil(2)
 
 /* EXERCISE 17
-Write a function "average" which receives an array and return the average value. The function automatically skips non-numeric entries in the array.
+Write a function "average" which receives an array and return the average value. 
+The function automatically skips non-numeric entries in the array.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 17--------------")
+
+const average = function (arrayAverage) {
+    let sumArrayAverage = 0
+    let countArrayAverage = 0
+    for (i = 0; i < arrayAverage.length; i++) {
+        if (typeof arrayAverage[i] === "number") {
+            sumArrayAverage += arrayAverage[i]
+            countArrayAverage++
+        } else {}    
+    }
+    let averageOfArray = Math.round(sumArrayAverage / countArrayAverage)
+    console.log(averageOfArray)
+    return averageOfArray
+}
+average([1, 2, 6, "cat", {number: 1, name: "product A"}])
 
 /* EXERCISE 18
 Write a function "longest" to find the longest string from an given array of strings.
