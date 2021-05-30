@@ -201,4 +201,18 @@ Ex.: X = 3, Y = 2
 "10","11","12"]
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 21--------------")
+
+const matrixGenerator = function (rowsX, columnsY) {
+ 
+    let matrix = []
+    for (i = 0; i < rowsX; i++) {
+       matrix[i] = [i]
+        for (j = 0; j < columnsY; j++) {
+            matrix[i][j] = [i]+[j] 
+        } 
+    }
+    console.log(matrix)
+    return matrix
+}
+matrixGenerator(2, 3)
