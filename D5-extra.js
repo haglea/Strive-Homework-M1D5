@@ -100,7 +100,20 @@ Create a function "loopUntil" which receives an integer x between 0 and 9.
 The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 15--------------")
+
+const loopUntil = function (x) {
+    let y
+    let yArray = []
+    for (i = 1; i < 4; i++) {
+        y = Math.floor(Math.random()*9)
+        if (y > x) {
+            yArray.push(y)
+            console.log(y)
+        } else break
+    }
+}
+loopUntil(2)
 
 /* EXERCISE 17
 Write a function "average" which receives an array and return the average value. The function automatically skips non-numeric entries in the array.
