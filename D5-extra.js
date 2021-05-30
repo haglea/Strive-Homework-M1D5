@@ -165,7 +165,20 @@ Write a function to create a very simple anti spam filter for your mailbox. The 
 Check if the email is valid using string methods. The email (in this example) is valid if the words SPAM and SCAM does not appear.
 */
 
-/* WRITE YOUR CODE HERE */
+console.log("\n--------------EXERCISE 19--------------")
+
+const checkIfEmailSpam = function (emailContent) {
+
+    if (typeof emailContent === "string" && emailContent.indexOf("SPAM") === - 1 && emailContent.indexOf("SCAM") === - 1) {
+        console.log("The email is valid:", true)
+        return true
+    } else {
+        console.log("The email is not valid:", false)
+        return false
+    }
+}
+checkIfEmailSpam("asdfjSPAMkl")
+
 
 /* EXERCISE 20
 Write a function that receives a date d as parameter and calculates the number of days passes since the d.
