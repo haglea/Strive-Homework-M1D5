@@ -100,7 +100,7 @@ Create a function "loopUntil" which receives an integer x between 0 and 9.
 The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.
 */
 
-console.log("\n--------------EXERCISE 15--------------")
+console.log("\n--------------EXERCISE 16--------------")
 
 const loopUntil = function (x) {
     let y
